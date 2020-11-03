@@ -1,0 +1,35 @@
+body{
+background-color: #000000; 
+front-family: Arial, Helvetica, sans-serif;
+  color:#FFFFFF;
+}
+a:visited {
+  color: #FFFFFF;
+}
+a:hover {
+  color: #FF2D00;
+}
+a:active {
+  color:  #FFFFFF;
+}
+.asemointi{
+  position: fixed;
+  top: 100px;
+  left 0px;  
+  }
+  .nappula{
+  background: black;
+  color:white;
+  padding: 10px;
+  border:none;
+}
+.nappula:hover{
+  background-color: royalblue;
+  Color: White;
+} 
+.laatikko1{
+  float: left;
+  width:33%;
+  border:2px solid white;
+  padding: 10px;
+  }

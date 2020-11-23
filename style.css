@@ -17,7 +17,7 @@ a:active {
   left 0px;  
   }
 .nappula{
-  background: white;
+  background: blue;
   color:black;
   padding: 10px;
   border:none;
@@ -72,4 +72,11 @@ margin: auto;
   padding: 10px;
   text-align:center;
   }
- 
+}
+.lightmode {
+  background-color: white;
+  color: white;
+}
+.rainbow {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+}

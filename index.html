@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>  
-  <div class="teksti">
       <title>Leevin Portfolio</title>
   <header>
     <h1>Leevin Portfolio</h1>
@@ -8,7 +7,6 @@
     <script src="script.js"></script>
 	  <link rel="stylesheet" type="text/css" href="style.css">
 <br><br>
-<div class="Teksti">
     <Label>Työkokemukset </Label>
     <ul> 
     <li>Kesätyö Insinööriliitossa 2019 kesä</li>
@@ -18,7 +16,6 @@
 <p>
 <h3>Harrastukset </h3>
  <li> Vapaa-ajalla pyöritän verkkokauppaa ja pelailen tietokoneella Csgota. </li>
- 
  <a href="https://puhelintarvikkeet.com"
       ="https://puhelintarvikkeet.com/"_blank"> Verkkokauppani </a>
  </div>
@@ -41,12 +38,41 @@
      <a href="tietoturva.html"
       ="tietoturva.html"_blank"> Tietoturva  </a>
   <br><br>
-    <div id="Asetukset" style="display:none">
-  <button onclick="myyFunction()">Toggle Night On/off</button>
-  <button onclick="myyFunction()">rainbow</button>
-       <br>
-      </div>
   
  <a class="nappula asemointi" href="otayhteytta.html">Ota yhteyttä</a>
 
-  <button onclick="myyFunction()">rainbow</button>
+<button onclick="myFunction()">Asetukset</button>
+
+<div id="myDIV">
+<p>Vaihda teemaa:</p>
+<input class="vaihdaTeemaa" type="radio" id="teema1" name="theme" value="tumma">
+<label>Tumma</label><br>
+<input class="vaihdaTeemaa" type="radio" id="teema2" name="theme" value="vaalea">
+<label>Vaalea</label><br><br>
+<input class="teemanappi" type="submit" value="Muuta Teema ">
+</div>
+<script>
+function myFunction() {
+var x = document.getElementById("myDIV");
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}
+
+document.querySelector('.teemanappi').addEventListener('click', e =>{
+e.preventDefault();
+const teema = document.querySelector('input[name="theme"]:checked').value;
+if(teema == 'tumma'){
+document.body.style.background = 'black';
+}
+else{
+document.body.style.background = 'white';
+}
+
+})
+</script>
+ <button onclick="myyFunction()"> Rainbow</button>
+</body>
+</html>

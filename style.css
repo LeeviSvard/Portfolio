@@ -1,6 +1,7 @@
 
 body{
-background-color:black; 
+background-color:black;
+color: white;
 front-family: Arial, Helvetica, sans-serif;
 }
 a:visited {
@@ -18,16 +19,12 @@ a:active {
   left 0px;  
   }
 .nappula{
-  background: blue;
+ background-color:blue;
   color:black;
   padding: 10px;
-  border:none;
 }
 
-.nappula:hover{
-  background-color: royalblue;
-  color: White;
-} 
+
 .laatikko1{
   float: left;
   width:70%;
@@ -68,20 +65,13 @@ border-bottom-style:double;
   padding: 100px;
    background-color: royalblue;
   }
-
- .teksti {
- color: white;
- }
-
  header{
   backgroung: black;
   padding: 10px;
   text-align:center;
   }
-.lightmode {
-  background-color: white;
-  color: white;
-}
+  
+
 .rainbow {
   background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
 }
@@ -99,4 +89,16 @@ border-bottom-style:dashed;
   margin-top:25px;
   color: white;
   }
-
+#myDIV {
+width: 100%;
+padding: 50px 0;
+text-align: center;
+background-color: dark;
+margin-top: 20px;
+}
+.virhe{
+  background: #FF001E;
+  color: #d6d6d6;
+  padding: 10px;
+  margin:10px;
+}

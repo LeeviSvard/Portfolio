@@ -18,9 +18,6 @@ emailnappi.addEventListener('click', e => {
         console.log ("valmis, yhteys toimii");
         }
    }; 
-   const nimi = document.querySelector('#nimi').value;
-    const email = document.querySelector('#email').value;
-    const viesti = document.querySelector('#viesti').value;
     var data = JSON.stringify({
       "EmailMsg": "viesti",
      "EmailTo": "leevi.svard",

@@ -42,30 +42,3 @@ console.log(perhelapset);
 
   console.log(25 +24 +17 +21);
 
-
-/*const kurssinappi = document.querySelector('.kurssinappi');
-const nimiSisalto = document.querySelector('#nimi');
-const postisisalto = document.querySelector('#posti');
-const virhe = document.querySelector('.virheilmoitus');
-const viesti = document.querySelector('#tiedot');
-
-
-kurssinappi.addEventListener('click', e => { e.preventDefault();
-
-  if (nimiSisalto.value === '' || postisisalto.value === '') {
-    virhe.classList.add('virhe')
-    virhe.innerHTML = 'Täytä kaikki kentät';
-    kurssinappi.style.background = 'red';
-    kurssinappi.value = 'Virhe, en lisännyt tietoa.';
-    setTimeout(() => virhe.innerHTML='', 3000);
-    setTimeout(() => virhe.style.background= 'black', 3000);
-    setTimeout(() => kurssinappi.style.background = 'rgb(245, 245, 245)', 3000);
-    setTimeout(() => kurssinappi.value = 'Lisää tieto', 3000);
-  }else{
-    const li = document.createElement('li');
-    li.appendChild(document.createTextNode(`${nimiSisalto.value} : ${asiaSisalto.value}`));
-    viesti.appendChild(li);
-    nimiSisalto.value = '';
-    asiaSisalto.value = '';
-  }
-}); 

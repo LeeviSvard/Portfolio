@@ -23,8 +23,7 @@ emailnappi.addEventListener('click', e => {
     const viesti = document.querySelector('#viesti').value;
     var data = JSON.stringify({
       "EmailMsg": "viesti",
-      "EmailAddress": "mira.vorne@salpaus.fi",
-      "EmailTo": "leevi.svard@gmail.com",
+     "EmailTo": "leevi.svard",
       "EmailName": "Tyyppi Testaa"
     }); 
     xhr.send(data); 
